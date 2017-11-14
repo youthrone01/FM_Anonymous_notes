@@ -1,0 +1,6 @@
+
+<form (submit)="onSubmit()" #formData = "ngForm">
+  Note: <input type="text" name="content" required minlength="3" [(ngModel)]="note.content" #content = "ngModel">
+  {{content.errors | json }}
+  <input type="submit" [disabled]="!formData.valid" value="Add Note">
+</form>

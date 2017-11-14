@@ -1,0 +1,8 @@
+<div class="box">
+<div *ngIf="notes != []">
+  <div *ngFor="let note of notes">
+    <h3>{{note.content}}</h3>
+    <h3>---- {{note.createdAt | date:'MMM d, yyyy  HH:mm:ss a'}}</h3><hr><br>
+  </div>
+</div>
+</div>
